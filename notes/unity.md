@@ -12,7 +12,7 @@ shows everything in current open scene (only one open at a time)
 	- player: invisible, but useful for placing controls/any persisted functionality
 
 ### project
-assets: all the files (code, pictures, sounds): prefabs, scenes, scripts, sprites
+assets: all the files (code, pictures, sounds): prefabs, scenes, [scripts](scripts.md), sprites
 
 ##### input manager
 1. action maps: different contexts you may want to change control scheme between (i.e. Player for gameplay or Menu for in a pause menu)

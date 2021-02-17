@@ -6,14 +6,27 @@ using UnityEngine.InputSystem;
 public class Player : MonoBehaviour
 {
     public InputMaster controls;
+    
+    [SerializeField]
+    public float selectionRadius = .1f;
 
     void Awake() 
     {
-        //controls.Player.Interact.performed += 
+        
+    }
+
+    void Start(){
+
+    }
+
+    void Update(){
+        
     }
 
     public void OnInteract()
     {
-        Debug.Log("Player: Interact.");
+        Vector2 mousePos = Camera.main.ScreenToViewportPoint(Mouse.current.position.ReadValue());
+        Debug.Log("Player: Interact at: " + mousePos);
+
     }
 }

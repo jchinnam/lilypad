@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.EventSystems;
 
 public class Lilypad : MonoBehaviour
 {
@@ -27,9 +28,21 @@ public class Lilypad : MonoBehaviour
 
     // On a mouse click event, this function should check if this gameObject is the object being clicked,
     // raising an event if so.
-    private void CheckIfClicked(){
-
+    public void CheckIfClicked(){
+        //Vector2 mousePos = Camera.mainScreenToWorldPoint(Mouse.current.position.ReadValue());
+        //RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
+        //if (hit.transform == this.transform) {
+            
+            
+            //Debug.Log("Lilypad clicked at: " + mousePos);
+        //}
     }
+
+    /*
+    public void OnPointerClick(PointerEventData pointerEventData){
+        Debug.Log(name + "Lilypad clicked!");
+    }
+    */
 
 
 }

@@ -1,9 +1,10 @@
 # lilypad
-the beginnings of a unity chain reaction game, inspiration [here](https://www.crazygames.com/game/chain-reaction)
+the beginnings of a unity chain reaction game
 
-### notes
-- on [unity](notes/unity.md)
-- on [scripts](notes/scripts.md)
+### docs
+- `docs/` for prototype & project docs
+- `notes/` for beginner notes on unity, scripts, etc
 
 ### resources
+- [unity docs](https://docs.unity3d.com/Manual/index.html) + [tutorials](https://learn.unity.com)
 - [unity beginner tutorials, by brackeys](https://youtube.com/playlist?list=PLPV2KyIb3jR5QFsefuO2RlAgWEz6EvVi6)

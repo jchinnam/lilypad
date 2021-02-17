@@ -121,6 +121,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &143319719 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1792962848226734516, guid: 1c5f8b9852f21644f961bb3d5ba207c8,
+    type: 3}
+  m_PrefabInstance: {fileID: 5406110098852649955}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06c18ef3f6c3bad468f3b44133fc2dee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -132,6 +144,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420030}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -147,6 +160,22 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
+--- !u!114 &519420030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c49b4cc203aa6414fae5c798d1d0e7d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EventMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_MaxRayIntersections: 0
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -261,7 +290,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d578bd020ab30724ba84b64094808162, type: 3}
-  m_Color: {r: 0.15138839, g: 0.6156863, b: 0.48884162, a: 1}
+  m_Color: {r: 0.15294115, g: 0.35026824, b: 0.6156863, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -470,6 +499,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 976e4afc2cb680e4b9ccd3b548d02ce2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  selectionRadius: 17.51
 --- !u!114 &2800230475367232757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -515,6 +545,21 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 4afa9a1d-aae8-48e4-80be-833d124c669a
     m_ActionName: Menu/Select[/Mouse/leftButton]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 143319719}
+        m_MethodName: CheckIfClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: b7a1d02f-5477-45ba-baa0-1539ac45aad4
+    m_ActionName: Player/MousePosition[/Mouse/position]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Keyboard and Mouse
   m_DefaultActionMap: Player
@@ -527,6 +572,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 59639533, guid: 1c5f8b9852f21644f961bb3d5ba207c8, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5406110098828139790, guid: 1c5f8b9852f21644f961bb3d5ba207c8,
         type: 3}
       propertyPath: m_RootOrder
@@ -587,5 +636,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lilypad
       objectReference: {fileID: 0}
+    - target: {fileID: 5406110098828139791, guid: 1c5f8b9852f21644f961bb3d5ba207c8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5425510827316467688, guid: 1c5f8b9852f21644f961bb3d5ba207c8,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: dc1f4662aadaa9a408db62b10919cfa0,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c5f8b9852f21644f961bb3d5ba207c8, type: 3}
